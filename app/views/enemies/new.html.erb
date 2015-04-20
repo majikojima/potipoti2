@@ -1,0 +1,19 @@
+<h1>Add new</h1>
+
+<%= form_for @enemy do |f| %>
+
+<p>
+	<%= f.label :name %><br>
+	<%= f.text_field :name %>
+</p>
+
+<p>
+	<%= f.label :hp %><br>
+	<%= f.text_field :hp %>
+</p>
+
+<p>
+	<%= f.submit %>
+</p>
+
+<% end %>

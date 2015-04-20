@@ -1,0 +1,9 @@
+<h1>Enemies</h1>
+
+<ul>
+	<% @enemies.each do |enemy| %>
+	<li><%= link_to enemy.name, enemy_path(enemy.id) %></li>
+	<% end %>
+</ul>
+
+<p><%= link_to "Add New", new_enemy_path %></p>
