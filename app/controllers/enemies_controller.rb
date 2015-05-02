@@ -6,6 +6,9 @@ class EnemiesController < ApplicationController
 
 	def show
 		@enemy = Enemy.find(params[:id])
+		hp = @enemy.hp
+		hp -= 1
+		@enemy.update_attribute(:hp, hp)
 	end
 
 	def new
